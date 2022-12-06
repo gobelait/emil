@@ -30,6 +30,16 @@ export default function ImageDisplay() {
             {item.title !== ''
             && (
               <ImageListItemBar
+                sx={{
+                  overflow: 'visible',
+                  '& > *': {
+                  padding: '5px',
+                    '& > *': {
+                      overflow: 'visible',
+                      whiteSpace: 'break-spaces',
+                    },
+                  },
+                }}
                 title={item.title}
               />
             )}
